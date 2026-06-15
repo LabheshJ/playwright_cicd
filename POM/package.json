@@ -1,0 +1,29 @@
+{
+  "name": "playwright-pom-bdd",
+  "version": "1.0.0",
+  "description": "Playwright with TypeScript, Page Object Model, and BDD (Cucumber)",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:headed": "cucumber-js --publish-quiet",
+    "test:debug": "node --inspect-brk ./node_modules/.bin/cucumber-js",
+    "test:parallel": "cucumber-js --parallel 4",
+    "test:report": "node generate-report.js"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "pom",
+    "bdd",
+    "cucumber"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.6.0",
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.10.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

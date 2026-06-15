@@ -1,0 +1,31 @@
+{
+  "validUser": {
+    "email": "test@example.com",
+    "password": "Test@1234",
+    "firstName": "John",
+    "lastName": "Doe",
+    "phoneNumber": "+1234567890"
+  },
+  "invalidUser": {
+    "email": "invalid@example.com",
+    "password": "wrongPassword"
+  },
+  "newUser": {
+    "email": "newuser@example.com",
+    "password": "NewPass@123",
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "phoneNumber": "+9876543210",
+    "dateOfBirth": "01/01/1990",
+    "address": "123 Main St",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "zipCode": "380001"
+  },
+  "testUrls": {
+    "baseUrl": "https://example.com",
+    "loginUrl": "https://example.com/login",
+    "registerUrl": "https://example.com/register",
+    "accountUrl": "https://example.com/account"
+  }
+}

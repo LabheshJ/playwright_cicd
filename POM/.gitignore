@@ -1,0 +1,15 @@
+node_modules/
+dist/
+test-results/
+.env
+.env.local
+.env.*.local
+*.log
+.DS_Store
+*.swp
+*.swo
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+coverage/
+.nyc_output/

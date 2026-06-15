@@ -1,0 +1,48 @@
+{
+  "name": "bdd-pom-playwright",
+  "version": "1.0.0",
+  "description": "BDD + POM Framework using Playwright and TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:chrome": "cucumber-js --profile chrome",
+    "test:firefox": "cucumber-js --profile firefox",
+    "test:webkit": "cucumber-js --profile webkit",
+    "test:ui": "cucumber-js --profile ui",
+    "test:debug": "cucumber-js --profile debug",
+    "report": "node generate-report.js",
+    "clean:reports": "rimraf reports/* screenshots/*"
+  },
+  "type": "commonjs",
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "ES2020"
+    },
+    "esm": false,
+    "experimentalEsm": false
+  },
+  "keywords": [
+    "BDD",
+    "POM",
+    "Playwright",
+    "TypeScript",
+    "Cucumber"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.6.0",
+    "@playwright/test": "^1.40.1",
+    "@types/chai": "^4.3.11",
+    "@types/node": "^20.10.5",
+    "chai": "^4.3.10",
+    "dotenv": "^16.3.1",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "playwright": "^1.40.1"
+  }
+}
