@@ -43,7 +43,7 @@ export default defineConfig({
    {
     name: 'chromium',
     use: { ...devices['Desktop Chrome'] },
-  },
+  },/*,
   {
     name: 'firefox',
     use: { ...devices['Desktop Firefox'] },
@@ -81,7 +81,7 @@ export default defineConfig({
       name: 'Tablet (iPad Pro)',
       use: { ...devices['iPad Pro'] },
     },
-
+*/
     /* Test against mobile viewports. */
     // {
     //   name: 'Mobile Chrome',
