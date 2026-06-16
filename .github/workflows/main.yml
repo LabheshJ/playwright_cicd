@@ -22,7 +22,7 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
-      run: npx playwright test Beginer/features/
+      run: npx playwright test Beginer/features/hook.spec.ts // need to change here
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
