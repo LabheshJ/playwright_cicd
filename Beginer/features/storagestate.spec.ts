@@ -1,5 +1,5 @@
 import { test } from '@playwright/test';
-
+// store data in json file and use it in other test cases
 test('Generate Storage State', async ({ page }) => {
   await page.goto('https://www.saucedemo.com/');
 
