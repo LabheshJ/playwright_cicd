@@ -3,7 +3,7 @@ import { webkit, chromium, firefox } from 'playwright'
 
 
 test('Reading page data',async()=>{
-    const fbrowser:Browser = await firefox.launch({headless: false});
+    const fbrowser:Browser = await firefox.launch({headless: true});
     const page:Page = await fbrowser.newPage();
 
     await page.goto("https://playwright.dev/");

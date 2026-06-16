@@ -1,11 +1,15 @@
 import { defineConfig, devices } from '@playwright/test';
+import dotenv from 'dotenv';
+dotenv.config();
+
+const isCI = !!(globalThis as any).process?.env?.CI;
 
 export default defineConfig({
   testDir: './features',
   fullyParallel: true,
-  forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? 2 : 0,
-  workers: process.env.CI ? 1 : undefined,
+  forbidOnly: isCI,
+  retries: isCI ? 2 : 0,
+  workers: isCI ? 1 : undefined,
   reporter: 'html',
   use: {
     baseURL: 'https://parabank.parasoft.com/parabank',
@@ -49,6 +53,6 @@ export default defineConfig({
   webServer: {
     command: 'npm run start',
     url: 'http://127.0.0.1:3000',
-    reuseExistingServer: !process.env.CI,
+    reuseExistingServer: !isCI,
   },
 });

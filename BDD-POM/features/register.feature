@@ -7,3 +7,6 @@ Feature: Register User
     When User enters valid registration details
     And User clicks Register button
     Then User account should be created successfully
+
+
+    

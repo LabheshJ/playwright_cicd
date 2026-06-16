@@ -22,17 +22,27 @@ export class RegisterPage {
         username: string,
         password: string
     ) {
-        // Fixed locators - removed dot notation, using proper CSS selectors
+
         await this.page.locator('input[name="customer.firstName"]').fill(firstName);
+
         await this.page.locator('input[name="customer.lastName"]').fill(lastName);
+
         await this.page.locator('input[name="customer.address.street"]').fill(address);
+
         await this.page.locator('input[name="customer.address.city"]').fill(city);
+
         await this.page.locator('input[name="customer.address.state"]').fill(state);
+
         await this.page.locator('input[name="customer.address.zipCode"]').fill(zipCode);
+
         await this.page.locator('input[name="customer.phoneNumber"]').fill(phone);
+
         await this.page.locator('input[name="customer.ssn"]').fill(ssn);
+
         await this.page.locator('input[name="customer.username"]').fill(username);
+
         await this.page.locator('input[name="customer.password"]').fill(password);
+
         await this.page.locator('input[name="repeatedPassword"]').fill(password);
     }
 

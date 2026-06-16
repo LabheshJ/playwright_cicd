@@ -1,3 +1,5 @@
+import fs from 'fs';
+
 import { RegisterPage } from '../pages/registerPage';
 import testData from '../fixtures/testData.json';
 
@@ -21,5 +23,18 @@ export class RegisterStep {
             username,
             newUser.password
         );
+
+        const credentials = {
+            username,
+            password: newUser.password
+        };
+
+        fs.writeFileSync(
+            'src/fixtures/userCredentials.json',
+            JSON.stringify(credentials, null, 2)
+        );
+
+        console.log('Credentials Saved');
+        console.log(credentials);
     }
 }

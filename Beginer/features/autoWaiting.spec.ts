@@ -8,7 +8,7 @@ test.use({
 */
 
 test ('Auto waiting',async()=>{
-    const browser:Browser = await chromium.launch({headless: false, channel:'chrome'});
+    const browser:Browser = await chromium.launch({headless: true, channel:'chrome'});
     const page:Page = await browser.newPage();
     await page.goto("https://www.google.com/");
     // faulty selector to check auto waiting for 30 seconds
