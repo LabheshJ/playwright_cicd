@@ -1,5 +1,5 @@
 // tests/performance/lighthouse.spec.ts
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
 import { playAudit } from 'playwright-lighthouse';
 import { chromium } from '@playwright/test';
 

@@ -42,6 +42,7 @@ test('Create account via API and verify in UI', async ({ page }) => {
   await page.locator('input[name="password"]').fill('Test@123');
   await page.locator('input[value="Log In"]').click();
 
+
   // Open Accounts Overview
   await page.goto('https://parabank.parasoft.com/parabank/overview.htm');
   // Verify newly created account is visible
